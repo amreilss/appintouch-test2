@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- หัวเว็บไซต์ -->
+    <header>
+        <h1>Recommended Recipes</h1>
+    </header>
+
+    <!-- Section 1: แถบเลื่อนเมนูอาหาร -->
+    <section class="menu-section">
+        <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="menu-item" onclick="showRecipe(0)">
+                    <img src="images/thang-noodle.jpg" alt="Thang Noodle">
+                    <p>Thang Noodle</p>
+                </div>
+                <div class="menu-item" onclick="showRecipe(1)">
+                    <img src="images/mango-sticky-rice.jpg" alt="Mango Sticky Rice">
+                    <p>Mango Sticky Rice</p>
+                </div>
+                <div class="menu-item" onclick="showRecipe(2)">
+                    <img src="images/corn-spicy-salad.jpg" alt="Corn Spicy Salad">
+                    <p>Corn Spicy Salad</p>
+                </div>
+                <div class="menu-item" onclick="showRecipe(3)">
+                    <img src="images/green-curry.jpg" alt="Green Curry">
+                    <p>Green Curry</p>
+                </div>
+                <div class="menu-item" onclick="showRecipe(4)">
+                    <img src="images/massaman-curry.jpg" alt="Massaman Curry">
+                    <p>Massaman Curry</p>
+                </div>
+                <div class="menu-item" onclick="showRecipe(5)">
+                    <img src="images/padthai.jpg" alt="Pad Thai">
+                    <p>Pad Thai</p>
+                </div>
+            </div>
+        </div>
+        <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button>
+    </section>
+
+    <!-- Section 2: สมุดแสดงรายละเอียดเมนู -->
+    <section class="recipe-section">
+        <div class="recipe-book">
+            <div class="book-content">
+                <img id="recipeImage" src="images/thang-noodle.jpg" alt="Recipe Image">
+                <h2 id="recipeTitle">Thang Noodle</h2>
+                <p id="recipeTime">Time: 20 mins</p>
+                <p id="recipeServings">Servings: 4</p>
+                <h3>Ingredients:</h3>
+                <ul id="recipeIngredients"></ul>
+                <h3>Instructions:</h3>
+                <p id="recipeInstructions"></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

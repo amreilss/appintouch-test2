@@ -1,0 +1,98 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin: 0;
+}
+
+/* หัวเว็บไซต์ */
+header h1 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+/* Section 1: Carousel เมนูอาหาร */
+.menu-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 80%;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu-item {
+    flex: 0 0 auto;
+    width: 180px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+/* ปุ่มเลื่อน */
+.scroll-btn {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.scroll-btn:hover {
+    background: #b71c1c;
+}
+
+/* Section 2: สมุดแสดงรายละเอียดเมนู */
+.recipe-section {
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-book {
+    background: #fff7ec;
+    padding: 15px;
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-content img {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .recipe-book {
+        width: 90%;
+    }
+}
